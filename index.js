@@ -11,7 +11,7 @@ require('./src/utils/auth')
 
 
 
- // const DB = 'mongodb+srv://Rahat18:Rahat_7980@cluster0.jm0tlfb.mongodb.net/TaxBillingClone?retryWrites=true&w=majority'
+ const DB = 'mongodb+srv://Rahat18:Rahat_7980@cluster0.wwwdyef.mongodb.net/PollApp?retryWrites=true&w=majority'
 
 mongoose.connect(DB).then(() => {
     console.log('Connection Successful');
@@ -49,11 +49,11 @@ app.listen(3000 , async()=>{
 //this callback will be executed every time the server starts
     console.log("Server started Successfully");
       
-    let user = await User.create({
-        email:"abc@xyz.com" ,
-        password:12345,
-        username:"ABCD"
-    });
-    console.log(user);
+    // let user = await User.create({
+    //     email:"abc@xyz.com" ,
+    //     password:12345,
+    //     username:"ABCD"
+    // });
+    // console.log(user);
     
 })
